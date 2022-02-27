@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background: #16161d;
+}
+
+.card{
+    background:black;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:20%;
+    border: 18px solid #eee;
+    border-radius:10px;
+}
+
+.card-cont{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin:30px;
+}
+
+.card-cont h2{
+    color:white;
+    font-size:30px;
+    font-family: "Sofia", sans-serif;
+    margin-bottom:20px;
+    text-shadow: 2px 1px 2px white;
+}
+
+.card-cont a{
+    text-decoration:none;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#about,#skill{
+    display:none;
+    flex-direction:row;
+    justify-content:space-evenly;
+    width:25%;
+}
+
+#about h3,#skill h3{
+    color:white;
+    font-size:25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bolder;
+}
+
+#about p{
+    color:white;
+    font-size:20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cont{
+    display:flex;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.btn{
+    color:black;
+    background:#eee;
+    width:25px;
+    height:25px;
+    margin-left:200px;
+    border:none;
+    outline:none;
+}
+
+.skill-list{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.skill-list li{
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+}

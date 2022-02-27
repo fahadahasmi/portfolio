@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>PortFolio</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div class="card">
+            <div class="card-cont">
+                <h2>Fahad Hasmi</h2>
+                <a id="abt" href="#about" >About</a>
+                <a id="skl" href="#skill" >Skills</a>
+                <a href="https://www.linkedin.com/in/fahad-hasmi/" >LinkedIn</a>
+                <a href="https://github.com/fahadahasmi/" >Github</a>
+            </div>
+        </div>
+
+        <div class="card" id="about">
+            <div class="card-cont">
+                <div class="cont">
+                    <h3>About</h3>
+                    <button id="btn" class="btn">X</button>
+                </div>
+                <p>
+                    I am a student at Rizvi College Of Engineering. I am currently pursuing a Bachelor of Engineering in Computer Engineering.
+                    I am a MERN Stack Developer and I am always looking to learn new things.
+                </p>
+            </div>
+        </div>
+        
+        <div class="card" id="skill">
+            <div class="card-cont">
+                <div class="cont">
+                    <h3>Skills</h3>
+                    <button id="btn1" class="btn">X</button>
+                </div>
+                <ul class="skill-list">
+                    <li>C</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>Web Development and Designing</li>
+                    <li>Linux and Windows</li>
+                    <li>Version Control</li>
+                </ul>
+            </div>
+        </div>
+
+    
+        <script>
+            var card = document.getElementsByClassName("card");
+            var about = document.getElementById("about");
+            var skill = document.getElementById("skill");
+            var abt = document.getElementById("abt");
+            var skl = document.getElementById("skl");
+            var btn = document.getElementById("btn");
+            var btn1 = document.getElementById("btn1");
+            var about_cont = document.getElementsByClassName("card-cont");
+            var skill_cont = document.getElementsByClassName("card-cont");
+            var about_h3 = document.getElementsByTagName("h3");
+            var skill_h3 = document.getElementsByTagName("h3");
+            var about_ul = document.getElementsByTagName("ul");
+            var skill_ul = document.getElementsByTagName("ul");
+            var about_li = document.getElementsByTagName("li");
+            var skill_li = document.getElementsByTagName("li");
+            var about_a = document.getElementsByTagName("a");
+            var skill_a = document.getElementsByTagName("a");
+            var about_h2 = document.getElementsByTagName("h2");
+            var skill_h2 = document.getElementsByTagName("h2");
+
+    
+
+            abt.addEventListener("click", function(){
+                about.style.display = "flex";
+                about_h3.innerHtml = "About";
+                card[0].style.display = "none";
+            });
+
+            skl.addEventListener("click", function(){
+                skill.style.display = "flex";
+                skill_h3.innerHtml = "About";
+                card[0].style.display = "none";
+            });
+
+            btn1.addEventListener("click", function(){
+                skill.style.display = "none";
+                card[0].style.display = "block";
+            });
+            btn.addEventListener("click", function(){
+                about.style.display = "none";
+                card[0].style.display = "block";
+            });
+        </script>
+
+    </body>
+</html>
